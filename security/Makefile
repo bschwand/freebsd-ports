@@ -197,6 +197,7 @@
     SUBDIR += gosec
     SUBDIR += gost-engine
     SUBDIR += gostsum
+    SUBDIR += govulncheck
     SUBDIR += gpa
     SUBDIR += gpg-gui
     SUBDIR += gpg-tui
@@ -247,6 +248,7 @@
     SUBDIR += ismtp
     SUBDIR += isnprober
     SUBDIR += john
+    SUBDIR += kanidm
     SUBDIR += kbfsd
     SUBDIR += kc
     SUBDIR += kdbxviewer
@@ -379,7 +381,6 @@
     SUBDIR += maltrail
     SUBDIR += masscan
     SUBDIR += mate-pam-helper
-    SUBDIR += mbedtls2
     SUBDIR += mbedtls3
     SUBDIR += mcrypt
     SUBDIR += md5deep
@@ -400,6 +401,7 @@
     SUBDIR += ncrack
     SUBDIR += ncrypt
     SUBDIR += nebula
+    SUBDIR += netbird
     SUBDIR += nettle
     SUBDIR += nextcloud-end_to_end_encryption
     SUBDIR += nextcloud-passman
@@ -461,6 +463,7 @@
     SUBDIR += openvpn
     SUBDIR += openvpn-admin
     SUBDIR += openvpn-auth-ldap
+    SUBDIR += openvpn-auth-oauth2
     SUBDIR += openvpn-auth-radius
     SUBDIR += openvpn-auth-script
     SUBDIR += openvpn-devel
@@ -630,6 +633,7 @@
     SUBDIR += p5-Crypt-SmbHash
     SUBDIR += p5-Crypt-Sodium
     SUBDIR += p5-Crypt-Solitaire
+    SUBDIR += p5-Crypt-SysRandom
     SUBDIR += p5-Crypt-TEA
     SUBDIR += p5-Crypt-T_e_a
     SUBDIR += p5-Crypt-Tea_JS
@@ -989,7 +993,6 @@
     SUBDIR += py-noiseprotocol
     SUBDIR += py-notus-scanner
     SUBDIR += py-ntlm-auth
-    SUBDIR += py-oauth2client
     SUBDIR += py-oauthlib
     SUBDIR += py-omemo-dr
     SUBDIR += py-onlykey
@@ -1099,7 +1102,6 @@
     SUBDIR += qt-sudo
     SUBDIR += qtkeychain
     SUBDIR += quantis-kmod
-    SUBDIR += racoon2
     SUBDIR += rage-encryption
     SUBDIR += ratify
     SUBDIR += ratproxy
@@ -1132,15 +1134,16 @@
     SUBDIR += rubygem-cvss-suite
     SUBDIR += rubygem-declarative_policy
     SUBDIR += rubygem-devise-two-factor
+    SUBDIR += rubygem-devise-two-factor-rails-gitlab
     SUBDIR += rubygem-devise-two-factor-rails5
     SUBDIR += rubygem-devise-two-factor-rails70
-    SUBDIR += rubygem-devise-two-factor41-rails70
     SUBDIR += rubygem-devise_pam_authenticatable2
     SUBDIR += rubygem-digest
     SUBDIR += rubygem-digest-crc
     SUBDIR += rubygem-doorkeeper
     SUBDIR += rubygem-doorkeeper-device_authorization_grant
     SUBDIR += rubygem-doorkeeper-openid_connect
+    SUBDIR += rubygem-doorkeeper-rails-gitlab
     SUBDIR += rubygem-doorkeeper-rails5
     SUBDIR += rubygem-doorkeeper-rails50
     SUBDIR += rubygem-doorkeeper-rails70
@@ -1365,6 +1368,7 @@
     SUBDIR += tpm-quote-tools
     SUBDIR += tpm-tools
     SUBDIR += tpm2-abrmd
+    SUBDIR += tpm2-openssl
     SUBDIR += tpm2-pkcs11
     SUBDIR += tpm2-tools
     SUBDIR += tpm2-tss
@@ -1375,6 +1379,7 @@
     SUBDIR += trivy
     SUBDIR += trousers
     SUBDIR += trufflehog
+    SUBDIR += tscli
     SUBDIR += tthsum
     SUBDIR += u2f-devd
     SUBDIR += uacme

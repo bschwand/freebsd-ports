@@ -5,6 +5,93 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20250606:
+  AFFECTS: users of net-mgmt/unifi9
+  AUTHOR: ronald@FreeBSD.org
+
+  The MongoDB dependency updates from 6.0 to 7.0.
+  Please read 20250520 about the upgrade instructions of
+  databases/mongodb60. Mind that the mongodb portnr for Unifi is 27117.
+  The 20240606 instructions for net-mgmt/unifi8 can also be
+  informative.
+
+  Always backup/snapshot before upgrading.
+  Turn off Unifi and MongoDB during the upgrade. (service unifi stop)
+
+  MongoDB 7.0 does not formally support ARM systems without Large System
+  Extensions (LSE) support.
+  Please use the unifi9-armv80a package when running on RPI4 or similar
+  systems.
+  Running the non-armv80a package will result in an "illegal instruction"
+  on these systems.
+
+20250520:
+  AFFECTS: users of databases/mongodb60
+  AUTHOR: ronald@FreeBSD.org
+
+  MongoDB version 6.0 is End of Life starting August 2025.
+  Please make sure you are running MongoDB version 7.0 or higher.
+  In-place upgrades are supported from version 6.0 to 7.0.
+  For an in-place upgrade it is important that the
+  'featureCompatibilityVersion' is set to 6.0 before the upgrade.
+  See: https://www.mongodb.com/docs/v7.0/release-notes/7.0-upgrade-standalone/#feature-compatibility-version
+
+  TL;DR, run these commands in mongodb60 before upgrading:
+  (see `pkg info -D mongodb60` how to install mongosh)
+  $ npx mongosh mongodb://127.0.0.1:27017/ # or use non-default port
+  > db.adminCommand( { setFeatureCompatibilityVersion: "6.0" } )
+  > exit
+
+20250519:
+  AFFECTS: users of sysutils/screen
+  AUTHOR: cy@FreeBSD.org
+
+  sysutils/screen has been updated to 5.0.1 from 4.9.1. All currently
+  running screen sessions must be terminated before upgrading. Failure
+  to do so will result in orphaning remaining screen sessions. This is
+  expected when updating from one major version of screen to to another.
+
+20250514:
+  AFFECTS: users of lang/perl5.*
+  AUTHOR: mat@FreeBSD.org
+
+  The default Perl version has been switched to 5.40.
+
+  See entry 20231017 for updating instructions.
+
+20250511:
+  AFFECTS: users of www/tt-rss
+  AUTHOR: dereks@lifeofadishwasher.com
+
+  tt-rss has dropped support for mysql/mariadb starting with commit
+  4cb8a84df46d46b.  The next update (mid-June) to www/tt-rss will include this
+  update.
+
+  https://community.tt-rss.org/t/support-for-mysql-is-no-more/6897
+
+  You should migrate your data to databases/postgresqlXY-server.
+
+20250510:
+  AFFECTS: users of net-p2p/bitcoin and/or net-p2p/bitcoin-daemon
+  AUTHOR: kbowling@FreeBSD.org
+
+  29.x is the last release series that will support the legacy BDB wallet
+  format.  We are already doing this awkwardly since the format is BDB 4.8
+  and we are building with BDB 5.  This will be removed in 30.0 later this
+  year.
+
+  You should upgrade your wallet now if you are still using a legacy wallet.
+
+  Instructions:
+  https://github.com/bitcoin/bitcoin/blob/29.x/doc/managing-wallets.md#migrating-legacy-wallets-to-descriptor-wallets
+
+  This release switches to CMake which results in a major refactoring of
+  the port and underlying build.  The result seems good, but please
+  provide feedback if there are any unexpected changes or problems.
+
+  This release dropped UPnP support due to security concerns.  NAT-PMP is
+  implemented as an alternative.
+
 20250506:
   AFFECTS: users of databases/postgresql* and other software using PostgreSQL to run
   AUTHOR: kbowling@FreeBSD.org

@@ -33,7 +33,6 @@
     SUBDIR += budgie-desktop
     SUBDIR += budgie-screensaver
     SUBDIR += cde
-    SUBDIR += cde-25
     SUBDIR += cde-devel
     SUBDIR += chayang
     SUBDIR += cinnamon
@@ -51,6 +50,7 @@
     SUBDIR += clipman
     SUBDIR += compton-conf
     SUBDIR += conlecterm
+    SUBDIR += contour
     SUBDIR += controllermap
     SUBDIR += cool-retro-term
     SUBDIR += coreterminal
@@ -228,6 +228,7 @@
     SUBDIR += lightdm
     SUBDIR += lightdm-gtk-greeter
     SUBDIR += lightdm-gtk-greeter-settings
+    SUBDIR += lightdm-kde-greeter
     SUBDIR += lilyterm
     SUBDIR += linux-c7-libxkbcommon
     SUBDIR += linux-c7-pixman

@@ -70,7 +70,6 @@
     SUBDIR += ast-aspell
     SUBDIR += augeas
     SUBDIR += az-aspell
-    SUBDIR += bar
     SUBDIR += bat
     SUBDIR += bat-extras
     SUBDIR += bbe
@@ -498,8 +497,8 @@
     SUBDIR += mxml
     SUBDIR += mythes
     SUBDIR += nb-aspell
-    SUBDIR += nerdlog
     SUBDIR += nds-aspell
+    SUBDIR += nerdlog
     SUBDIR += nl-aspell
     SUBDIR += nl-hunspell
     SUBDIR += nl-hyphen
@@ -522,10 +521,12 @@
     SUBDIR += opensearch-dashboards210
     SUBDIR += opensearch-dashboards213
     SUBDIR += opensearch-dashboards216
+    SUBDIR += opensearch-dashboards219
     SUBDIR += opensearch13
     SUBDIR += opensearch210
     SUBDIR += opensearch213
     SUBDIR += opensearch216
+    SUBDIR += opensearch219
     SUBDIR += opensp
     SUBDIR += openvanilla-framework
     SUBDIR += or-aspell
@@ -1298,9 +1299,9 @@
     SUBDIR += py-CommonMark
     SUBDIR += py-Morfessor
     SUBDIR += py-QDarkStyle
-    SUBDIR += py-RTFDE
     SUBDIR += py-TatSu
     SUBDIR += py-Tempita
+    SUBDIR += py-Tubes
     SUBDIR += py-accessible-pygments
     SUBDIR += py-acora
     SUBDIR += py-aeidon
@@ -1312,6 +1313,8 @@
     SUBDIR += py-ansicolors
     SUBDIR += py-ansiwrap
     SUBDIR += py-anyascii
+    SUBDIR += py-anymarkup
+    SUBDIR += py-anymarkup-core
     SUBDIR += py-arabic-reshaper
     SUBDIR += py-asciinema
     SUBDIR += py-asonic
@@ -1319,6 +1322,7 @@
     SUBDIR += py-awesome-slugify
     SUBDIR += py-backrefs
     SUBDIR += py-bibtexparser
+    SUBDIR += py-bistring
     SUBDIR += py-bracex
     SUBDIR += py-cchardet
     SUBDIR += py-chameleon
@@ -1330,7 +1334,6 @@
     SUBDIR += py-cloud_sptheme
     SUBDIR += py-cmarkgfm
     SUBDIR += py-collective.checkdocs
-    SUBDIR += py-colorclass
     SUBDIR += py-creole
     SUBDIR += py-cssselect2
     SUBDIR += py-csvkit
@@ -1367,7 +1370,6 @@
     SUBDIR += py-epy-reader
     SUBDIR += py-et_xmlfile
     SUBDIR += py-evtx2splunk
-    SUBDIR += py-extract-msg
     SUBDIR += py-fastavro
     SUBDIR += py-fasttext-predict
     SUBDIR += py-faust-cchardet
@@ -1511,6 +1513,7 @@
     SUBDIR += py-pybtex
     SUBDIR += py-pybtex-docutils
     SUBDIR += py-pycountry
+    SUBDIR += py-pycddl
     SUBDIR += py-pydata-sphinx-theme
     SUBDIR += py-pyexcel
     SUBDIR += py-pyexcel-ezodf
@@ -1650,7 +1653,6 @@
     SUBDIR += py-text2digits
     SUBDIR += py-textdistance
     SUBDIR += py-textfsm
-    SUBDIR += py-textract
     SUBDIR += py-texttable
     SUBDIR += py-textual
     SUBDIR += py-textual-autocomplete
@@ -1754,6 +1756,7 @@
     SUBDIR += rubygem-actionpack-xml_parser-rails52
     SUBDIR += rubygem-actionpack-xml_parser-rails61
     SUBDIR += rubygem-actionpack-xml_parser-rails72
+    SUBDIR += rubygem-actiontext-gitlab
     SUBDIR += rubygem-actiontext60
     SUBDIR += rubygem-actiontext61
     SUBDIR += rubygem-actiontext70
@@ -1806,6 +1809,7 @@
     SUBDIR += rubygem-elasticsearch-api
     SUBDIR += rubygem-elasticsearch-api-gitlab
     SUBDIR += rubygem-elasticsearch-api7
+    SUBDIR += rubygem-elasticsearch-api8
     SUBDIR += rubygem-elasticsearch-dsl
     SUBDIR += rubygem-elasticsearch-gitlab
     SUBDIR += rubygem-elasticsearch-model
@@ -1817,6 +1821,7 @@
     SUBDIR += rubygem-elasticsearch-transport-gitlab
     SUBDIR += rubygem-elasticsearch-xpack
     SUBDIR += rubygem-elasticsearch7
+    SUBDIR += rubygem-elasticsearch8
     SUBDIR += rubygem-emot
     SUBDIR += rubygem-escape_utils
     SUBDIR += rubygem-extended-markdown-filter
@@ -1897,6 +1902,7 @@
     SUBDIR += rubygem-puppet-strings
     SUBDIR += rubygem-raabro
     SUBDIR += rubygem-rails-dom-testing
+    SUBDIR += rubygem-rails-dom-testing-rails-gitlab
     SUBDIR += rubygem-rails-dom-testing-rails5
     SUBDIR += rubygem-rails-dom-testing-rails50
     SUBDIR += rubygem-rails-dom-testing-rails52
@@ -2134,6 +2140,7 @@
     SUBDIR += wv
     SUBDIR += wv2
     SUBDIR += xalan-j
+    SUBDIR += xan
     SUBDIR += xenv
     SUBDIR += xerces-c3
     SUBDIR += xerces-j
@@ -2144,7 +2151,6 @@
     SUBDIR += xhtml-basic
     SUBDIR += xhtml-modularization
     SUBDIR += xhtml1-xsd
-    SUBDIR += xincluder
     SUBDIR += xlhtml
     SUBDIR += xlnt
     SUBDIR += xlreader
